@@ -17,7 +17,7 @@ from numpy import array
 
 import pandas as pd
 from tensorflow import keras
-predictor = ktrain.load_predictor('predictor1')
+predictor = ktrain.load_predictor('predictor')
 
 st.write("This is an application to calculate Employee Mental Fatigue Score")
 image = Image.open("IMG_2605.jpeg")
