@@ -1,13 +1,11 @@
-import streamlit as st
-import tensorflow as tf
-from PIL import Image 
-import numpy as np
-import ktrain
-import sys
-import ktrain
-from ktrain import tabular
-import pandas as pd
-import numpy as np
-from numpy import array
-
-from tensorflow import keras
+streamlit
+tensorflow
+PIL
+numpy
+ktrain
+sys
+ktrain
+pandas 
+numpy 
+numpy
+tensorflow
