@@ -1,7 +1,6 @@
 streamlit
 tensorflow
 PIL==8.2.0
-numpy==7.1.2
 ktrain==0.26.2
 pandas==1.1.5
 numpy==1.1.5
