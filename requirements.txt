@@ -1,6 +1,6 @@
 streamlit
 tensorflow
-PIL
+PIL==8.2.0
 numpy
 ktrain
 sys
