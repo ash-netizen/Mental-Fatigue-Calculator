@@ -62,6 +62,7 @@ def Score():
 
 if st.button("Predict"):
     result1 = Score()
+    st.balloons()
     st.success('Your Mental Fatigue Score is {} out of 10'.format(int(result1*10)))
     result= mental_fatigue_score(WFH_Setup_Available, Designation, Company_Type, Average_hours_worked_per_day, Employee_satisfaction_score)
     st.success('You {}'.format(result))
