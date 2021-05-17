@@ -12,6 +12,7 @@ import pandas as pd
 from tensorflow import keras
 predictor = ktrain.load_predictor('Predictor')
 
+st.title("Mental Fatigue Calculator")
 st.write("Workplaces that promote mental health and support people with mental disorders are more likely to reduce absenteeism,increase productivity and benefit from associated economic gains")
 image = Image.open("IMG_2605.JPG")
 st.image(image, use_column_width=True)
