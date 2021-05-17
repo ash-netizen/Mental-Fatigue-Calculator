@@ -46,7 +46,7 @@ def mental_fatigue_score(WFH_Setup_Available, Designation, Company_Type, Average
     prediction = 'have Excellent Mental Health, You might want to collaborate more!'
   elif 0.3 < prediction < 0.5:
     prediction = "need to work a bit on your Mental Health, Please follow https://community.virginpulse.com/work-from-home-exercises-to-keep-employees-active-and-healthy"
-  elif 0.5 < prediction < 0.7:
+  elif 0.5 < prediction < 0.65:
     prediction = 'have poor Mental health, Please work on it, you can follow  https://www.mhanational.org/31-tips-boost-your-mental-health'
   else:
     prediction = 'have serious Mental issues, Please ring a bell and start to take care of your Mental Health, you can start with https://healthblog.uofmhealth.org/health-management/6-ways-to-relieve-your-work-from-home-fatigue'
