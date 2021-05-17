@@ -45,7 +45,7 @@ data = pd.DataFrame([data])
 def mental_fatigue_score(WFH_Setup_Available, Designation, Company_Type, Average_hours_worked_per_day, Employee_satisfaction_score):
   prediction = predictor.predict(data)
   if prediction <= 0.3:
-    prediction = 'Hurrah!, have good Mental Health, keep it up!'
+    prediction = 'have Excellent Mental Health, keep it up!'
   elif 0.3 < prediction < 0.5:
     prediction = "need to work a bit on your Mental Health, Please follow https://community.virginpulse.com/work-from-home-exercises-to-keep-employees-active-and-healthy"
   elif 0.5 < prediction < 0.75:
