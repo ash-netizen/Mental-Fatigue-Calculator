@@ -41,7 +41,7 @@ data = {'WFH_Setup_Available':WFH_Setup_Available,'Designation':Designation, 'Co
 data = pd.DataFrame([data])
 
 
-
+@st.cache
 def mental_fatigue_score(WFH_Setup_Available, Designation, Company_Type, Average_hours_worked_per_day, Employee_satisfaction_score):
   prediction = predictor.predict(data)
   if prediction <= 0.3:
@@ -56,6 +56,7 @@ def mental_fatigue_score(WFH_Setup_Available, Designation, Company_Type, Average
   print(prediction)
   return prediction
 
+@st.cache
 def Score():
   Score = predictor.predict(data)
   return Score
