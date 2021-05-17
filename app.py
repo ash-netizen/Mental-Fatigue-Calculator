@@ -54,7 +54,6 @@ def mental_fatigue_score(WFH_Setup_Available, Designation, Company_Type, Average
   print(prediction)
   return prediction
 
-@st.cache
 def Score():
   Score = predictor.predict(data)
   return Score
