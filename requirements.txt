@@ -1,6 +1,7 @@
 streamlit
 tensorflow
-Pillow==8.2.0
-ktrain==0.26.2
-pandas==1.1.5
-numpy==1.19.5
+Pillow
+ktrain
+pandas
+numpy
+htbuilder
