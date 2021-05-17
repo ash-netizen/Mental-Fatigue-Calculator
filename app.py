@@ -21,13 +21,13 @@ WFH_Setup_Available =  st.selectbox(
     'is Work from home enabled for you?',
     ('Yes', 'No')
 )
-Designation = st.text_input("what is your designation?")
+Designation = st.text_input("What is your Designation?")
 Company_Type = st.selectbox(
     'What is your Company Type?',
     ('Product', 'Service')
 )
-Average_hours_worked_per_day = st.text_input("how many hours you work on an average per day?")
-Employee_satisfaction_score = st.text_input("Please enter your satisfaction score on scale of 10")
+Average_hours_worked_per_day = st.text_input("How many hours you work on an average per day?")
+Employee_satisfaction_score = st.text_input("Please enter your Satisfaction Score on scale of 10")
 
 data = {'WFH_Setup_Available':WFH_Setup_Available,'Designation':Designation, 'Company_Type':Company_Type, 
         'Average_hours_worked_per_day': Average_hours_worked_per_day, 'Employee_satisfaction_score': Employee_satisfaction_score}
@@ -62,7 +62,7 @@ def Score():
 
 if st.button("Predict"):
     result1 = Score()
-    st.success('Your Mental Fatigue Score is {}'.format(int(result1*100)))
+    st.success('Your Mental Fatigue Score is {}'.format(int(result1*10)))
     result= mental_fatigue_score(WFH_Setup_Available, Designation, Company_Type, Average_hours_worked_per_day, Employee_satisfaction_score)
     st.success('You {}'.format(result))
 
