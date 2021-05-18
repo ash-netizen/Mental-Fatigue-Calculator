@@ -21,7 +21,7 @@ WFH_Setup_Available =  st.selectbox(
     'is Work from home enabled for you?',
     ('Yes', 'No')
 )
-Designation = st.text_input("What is your Designation?")
+Designation = st.text_input("What is your Designation(1-5), 1-lowest ?")
 Company_Type = st.selectbox(
     'What is your Company Type?',
     ('Product', 'Service')
