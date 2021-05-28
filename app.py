@@ -67,7 +67,7 @@ if st.button("Predict"):
     result= mental_fatigue_score(WFH_Setup_Available, Designation, Company_Type, Average_hours_worked_per_day, Employee_satisfaction_score)
     st.success('You {}'.format(result))
 
-st.write(" Tip: use fractional Inputs for better results like 8.4, not 8")
+st.write(" Tip: for last 2 values use fractional Inputs for better results like 8.4, not 8")
 
 pageviews=Pageviews()
 pageviews.append('dummy')
