@@ -10,7 +10,7 @@ from numpy import array
 
 import pandas as pd
 from tensorflow import keras
-predictor = ktrain.load_predictor('Predictor')
+predictor = ktrain.load_predictor('predictor')
 
 st.title("Mental Fatigue Calculator")
 st.write("Creating a healthy mindset is an investment in your overall wellbeing, Lets evaluate your Mental Fatigue and follow recommendations for a better Future.")
