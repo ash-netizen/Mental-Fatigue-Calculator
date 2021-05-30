@@ -62,11 +62,11 @@ def Score():
 if st.button("Predict"):
     result1 = Score()
     st.balloons()
-    st.success('Your Mental Fatigue Score is {} out of 10.'.format(int(result1*10)))
+    st.success('Your Mental Fatigue Score is {} out of 100.'.format(int(result1*100)))
     result= mental_fatigue_score(WFH_Setup_Available, Designation, Company_Type, Average_hours_worked_per_day, Employee_satisfaction_score)
     st.success('YOU {}'.format(result))
 
-st.write(" Tip: for last 2 values use fractional Inputs for better results like 8.4, not 8.")
+st.write(" Tip: For Satisfaction Score put fractional values for more precise results like 8.4, not 8.")
 
 pageviews=Pageviews()
 pageviews.append('dummy')
