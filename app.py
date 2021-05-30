@@ -49,8 +49,7 @@ def mental_fatigue_score(WFH_Setup_Available, Designation, Company_Type, Average
   elif 0.5 < prediction < 0.65:
     prediction = 'have Poor Mental health, Please work on it, you can follow  https://www.mhanational.org/31-tips-boost-your-mental-health'
   else:
-    prediction = 'have serious Mental issues, Please ring a bell and start to take care of your Mental Health, you can start with https://healthblog.uofmhealth.org/health-management/6-ways-to-relieve-your-work-from-home-fatigue'
-
+    prediction = 'HAVE SERIOUS FATIGUE LEVEL, PLEASE START TO TAKE CARE OF MENTAL HEALTH, you can start with https://blog.doist.com/mental-fatigue/'
   print(prediction)
   return prediction
 
