@@ -49,7 +49,7 @@ def mental_fatigue_score(WFH_Setup_Available, Designation, Company_Type, Average
   elif 0.5 < prediction < 0.65:
     prediction = 'have Poor Mental health, Please work on it, you can follow  https://www.mhanational.org/31-tips-boost-your-mental-health'
   else:
-    prediction = 'HAVE SERIOUS FATIGUE LEVEL, PLEASE START TO TAKE CARE OF MENTAL HEALTH, you can start with https://blog.doist.com/mental-fatigue/'
+    prediction = 'HAVE SERIOUS MENTAL FATIGUE LEVEL, PLEASE START TO TAKE CARE OF MENTAL HEALTH, can start with https://blog.doist.com/mental-fatigue/'
   print(prediction)
   return prediction
 
@@ -64,7 +64,7 @@ if st.button("Predict"):
     st.balloons()
     st.success('Your Mental Fatigue Score is {} out of 10.'.format(int(result1*10)))
     result= mental_fatigue_score(WFH_Setup_Available, Designation, Company_Type, Average_hours_worked_per_day, Employee_satisfaction_score)
-    st.success('You {}'.format(result))
+    st.success('YOU {}'.format(result))
 
 st.write(" Tip: for last 2 values use fractional Inputs for better results like 8.4, not 8.")
 
